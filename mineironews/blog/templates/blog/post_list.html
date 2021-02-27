@@ -7,8 +7,13 @@
 <body>
     <h1>Mineiro News</h1>
     <h2>Segura essa loucura</h2>
-    <br>
-    <p>As mais novas notícias sempre em mão quando o editor decidir postar</p>
-    <p>Para fins quase não lucrativos</p>
+    <hr>
+    {% for post in posts %}
+        <div>
+            <p>publicado: {{ post.published_date }}</p>
+            <h2><a href="#">{{ post.title }}</a> </h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
 </body>
 </html>
