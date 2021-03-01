@@ -1,0 +1,45 @@
+body {
+    background-color: #fcebd7;
+    padding: 20px;
+    font-family: 'Lobster';
+}
+
+.title {
+    font-size: 5.1em;
+    text-align: center;
+    font-style: italic;
+}
+
+p {
+    text-indent: 20px;
+}
+
+.data_post {
+    font-size: 0.6em;
+    font-style: italic;
+}
+
+h1, a, .data_post {
+    color: #6b3e26;
+}
+
+h2 a:hover {
+    color: #977767;
+}
+
+.title_detail {
+    color: #6b3e26;
+}
+
+.post {
+    background-color: #e2d3c1;
+    border: #e2d3c1 1px solid;
+    border-left: #6b3e26 5px solid;
+    /* border-bottom-right-radius: 22px; */
+    padding: 10px;
+    margin: 9px;
+}
+
+a {
+    text-decoration: none;
+}

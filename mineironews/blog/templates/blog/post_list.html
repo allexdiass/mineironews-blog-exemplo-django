@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>MineiroNews</title>
-</head>
-<body>
-    <h1>Mineiro News</h1>
-    <h2>Segura essa loucura</h2>
-    <hr>
+{% extends 'blog/base.html' %}
+
+{% block content %}
     {% for post in posts %}
-        <div>
-            <p>publicado: {{ post.published_date }}</p>
-            <h2><a href="#">{{ post.title }}</a> </h2>
+        <div class="post">
+            {% comment %} <p>publicado: {{ post.published_date }}</p> {% endcomment %}
+            {% if post.published_date is None %}
+                <h5 class="data_post">Data de publicação não informada</h5>
+            {% else %}
+                <h5 class="data_post">{{ post.published_date }}</h5>
+            {% endif %}
+            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-</body>
-</html>
+{% endblock content %}
+
