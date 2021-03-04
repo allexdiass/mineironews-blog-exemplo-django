@@ -8,7 +8,6 @@ body {
     font-size: 5.1em;
     text-align: center;
     font-style: italic;
-    margin-bottom: 60px;
 }
 
 p {
@@ -25,10 +24,6 @@ h1, a, .data_post {
 }
 
 h2 a:hover {
-    color: #977767;
-}
-
-a:hover {
     color: #977767;
 }
 
@@ -49,16 +44,10 @@ a {
     text-decoration: none;
 }
 
-.date {
-    text-align: right;
-}
-
 .detail {
+    margin: 10px;
     background-color: #977767;
     border: #977767 1px solid;
-    border-radius: 10px;
+    border-radius: 50%;
     height: 60vh;
-    padding: 2vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
 }
